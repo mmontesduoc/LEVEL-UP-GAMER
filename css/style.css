@@ -1,1 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+}
 
+.navbar {
+    background-color: #1E90FF !important;
+    padding: 0;
+    /* Eliminamos el padding para que esté a tope */
+}
+
+.navbar-brand,
+.nav-link {
+    color: #FFFFFF !important;
+}
+
+/* Centrar menú */
+#navbarSupportedContent {
+    justify-content: center;
+}
+
+/* separar los titulos del menu*/
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-item:hover {
+    background-color: #6EB4FF;
+}
+
+/* Hacemos que el navbar ocupe todo el ancho */
+.container-fluid {
+    padding: 5;
+}
+
+.carousel-item {
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.offcanvas {
+    background-color: #1E90FF;
+}
+
+.offcanvas-title,
+.offcanvas-body .nav-link {
+    color: #FFFFFF !important;
+}
+
+.btn-outline-success {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-outline-success:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.game-section {
+    padding: 50px 0;
+    color: white;
+}
+
+.card {
+    background-color: #16213e;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #1E90FF;
+    color: white;
+    padding: 5px 0;
+    margin-top: 50px;
+}
+
+/* Estilos adicionales para centrar el menú */
+.navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Ajustes para el botón del menú en móviles */
+.navbar-toggler {
+    position: absolute;
+    right: 15px;
+}
