@@ -26,7 +26,8 @@ body {
 }
 
 .navbar-nav .nav-item:hover {
-    background-color: #6EB4FF;
+    transform: translateY(-10px);
+    transition: transform 0.5s;
 }
 
 /* Hacemos que el navbar ocupe todo el ancho */
@@ -71,11 +72,13 @@ body {
 .game-section {
     padding: 50px 0;
     color: white;
+
 }
 
 .card {
     background-color: #16213e;
     color: white;
+
     transition: transform 0.3s;
 }
 
@@ -84,14 +87,13 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    background-color: #1E90FF;
-    color: white;
-    padding: 5px 0;
-    margin-top: 50px;
-}
-
-/* Estilos adicionales para centrar el menú */
+/*footer {
+            background-color: #1E90FF;
+            color: white;
+            padding: 5px 0;
+            margin-top: 50px;
+        }
+        /* Estilos adicionales para centrar el menú */
 .navbar-nav {
     margin: 0 auto;
     display: flex;
@@ -103,3 +105,211 @@ footer {
     position: absolute;
     right: 15px;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /* opcional: mantiene el color del texto */
+}
+
+footer {
+    background: #1E90FF;
+    background: -webkit-linear-gradient(59deg, #3A6073, #1E90FF);
+    background: linear-gradient(59deg, #3A6073, #1E90FF);
+    color: white;
+    margin-top: 100px;
+}
+
+footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+footer a:hover {
+    color: #FA944B;
+    text-decoration: none;
+}
+
+.copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+    padding-top: 2em;
+    color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+}
+
+ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+    color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+    color: #44BCDD;
+}
+
+.social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+
+.social-network a {
+    background-color: #F9F9F9;
+}
+
+/* Estilos para el icono del carrito y login en el navbar */
+
+.cart-icon {
+    margin-left: relative;
+    /* lo empuja al extremo derecho */
+    position: relative;
+}
+
+.cart-login {
+    margin-left: relative;
+    /* lo empuja al extremo derecho */
+    position: relative;
+}
+
+.cart-login a {
+    color: white;
+    /* color del icono */
+    font-size: 22px;
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.cart-login a:hover {
+    color: #6EB4FF;
+    /* azul bootstrap al pasar el mouse */
+}
+
+.cart-icon a {
+    color: white;
+    /* color del icono */
+    font-size: 22px;
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.cart-icon a:hover {
+    color: #6EB4FF;
+    /* azul bootstrap al pasar el mouse */
+}
+
+.cart-count {
+    position: absolute;
+    top: 4px;
+    right: -5px;
+    background: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+.inicio-sesion {
+
+    color: white;
+    font-size: 14px;
+    padding: 2px;
+
+}
+
+.logo-brand {
+    height: 60px;
+    /* ajusta a tu gusto */
+    width: auto;
+    object-fit: contain;
+}
+
+.game-section .card-img-top {
+    width: 100%;
+    height: 250px;
+    /* altura fija para todas */
+    object-fit: cover;
+    /* mantiene proporción sin deformar */
+
+    padding: 10px;
+    /* espacio dentro del marco */
+
+}
+
+.btn {
+    background-color: #1E90FF;
+    color: white;
+}
+
