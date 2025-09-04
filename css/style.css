@@ -313,3 +313,196 @@ ul.social-network li {
     color: white;
 }
 
+/* estilos carro de compras*/
+
+.card-carro {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* centrado automático */
+    padding: 20px;
+    max-width: 1000px; /* Reducir el ancho máximo */
+    width: 90%; /* Hace que ocupe el 90% del ancho de la pantalla, pero no más de 700px */
+	
+}
+
+/* Títulos */
+.title {
+    margin-bottom: 20px;
+}
+
+.title h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.title .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos del carrito */
+.cart {
+    padding: 20px;
+}
+
+.cart .row {
+    margin-bottom: 15px;
+}
+
+.cart .main {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.cart .main .col-2 img {
+    max-width: 80px;
+    border-radius: 8px;
+}
+
+.cart .main .col {
+    padding: 0 10px;
+}
+
+.cart .main .col a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 5px;
+}
+
+.cart .main .col .quantity {
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.cart .main .col .close {
+    cursor: pointer;
+    color: #e74c3c;
+}
+
+.cart .back-to-shop {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cart .back-to-shop a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1rem;
+}
+
+/* Resumen */
+.summary {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 1rem;
+}
+
+.summary h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.summary .row {
+    margin: 10px 0;
+}
+
+.summary .row .col {
+    font-size: 1rem;
+}
+
+.summary form {
+    margin-top: 20px;
+}
+
+.summary p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.summary select, .summary input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    background-color: #f7f7f7;
+}
+
+.summary select:focus, .summary input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.summary .btn {
+    background-color: #1E90FF;
+    color: white;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.summary .btn:hover {
+    background-color: #3A6073;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .card-carro {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .cart .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cart .main .col-2, .cart .main .col {
+        padding: 5px;
+    }
+
+    .summary {
+        margin-top: 30px;
+    }
+
+    .summary .row {
+        display: block;
+        text-align: center;
+    }
+
+    .summary .btn {
+        font-size: 1rem;
+        padding: 14px 0;
+    }
+}
+
+/* Botones de cantidad */
+.btn-quantity {
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+.btn-quantity:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilos adicionales para la imagen */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* fin estilos carro de compras*/
