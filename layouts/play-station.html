@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+    <title>PlayStation- Level UP Gamer</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="../layouts/menu-principal.html"> <img src="../images/logo2.png"
+                    alt="Level UP Gamer" class="logo-brand d-inline-block align-text-top"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../layouts/menu-principal.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../layouts/nintendo.html">Nintendo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../layouts/play-station.html">PlayStation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">XBOX</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../layouts/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="cart-login">
+                    <a href="#">
+                        <span class="inicio-sesion">Iniciar Sesion</span>
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </div>
+
+                <div class="cart-icon">
+                    <a href="../layouts/carro-compras.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+<br>
+
+    <!-- Header Nintendo -->
+    <div class="container-fluid text-center text-white py-5"
+        style="background: linear-gradient(135deg, #E60012, #0066CC); margin-bottom: 50px;">
+        <h1 class="display-3 fw-bold"><i class="fas fa-gamepad"></i> PLAYSTATION</h1>
+        <p class="lead">Descubre el mundo PlayStation con nuestras consolas y juegos exclusivos</p>
+    </div>
+
+    <!-- Filtros de Categoría -->
+    <div class="container mb-5">
+        <div class="text-center">
+            <button class="btn btn-outline-primary m-2 filter-btn" data-category="all">Todos los Productos</button>
+            <button class="btn btn-outline-primary m-2 filter-btn" data-category="consoles">Consolas</button>
+            <button class="btn btn-outline-primary m-2 filter-btn" data-category="games">Juegos</button>
+            <button class="btn btn-outline-primary m-2 filter-btn" data-category="accessories">Accesorios</button>
+        </div>
+    </div>
+
+    <!-- Sección de productos Nintendo -->
+    <section class="game-section-carro">
+        <div class="container">
+            <div class="row" id="products-container">
+
+                <!-- Nintendo Switch OLED -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="consoles">
+                    <div class="card h-100">
+                        <img src="../images/5.jpg"
+                            class="card-img-top-carro" alt="Nintendo Switch OLED">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Consola PS5 Slim Con Disco</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Capacidad:</span>
+                                    <span>1 TB</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Cantidad de Controles:</span>
+                                    <span>1</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Capacidad Memoria RAM:</span>
+                                    <span>16 GB</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Tipo de Consola:</span>
+                                    <span>Sobremesa</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Disfruta de tiempos de carga superveloces, una experiencia mas inmersiva.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$349.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nintendo Switch Lite -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="consoles">
+                    <div class="card h-100">
+                        <img src="../images/4.jpg"
+                            class="card-img-top-carro" alt="Nintendo Switch Lite">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Playstation 4 Slim Nueva + Gta 5 Negro</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Capacidad:</span>
+                                    <span>1 TB</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Cantidad de Controles:</span>
+                                    <span>1</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Conectividad Wi-Fi:</span>
+                                    <span>Si</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Tipo de Consola:</span>
+                                    <span>Sobremesa</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Versión portátil y accesible que combina ligereza Y practicidad.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$199.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Legend of Zelda: Tears of the Kingdom -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="games">
+                    <div class="card h-100">
+                        <img src="../images/rdr.jpg" class="card-img-top-carro"
+                            alt="Zelda Tears of the Kingdom">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Red Dead Redemption II</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Género:</span>
+                                    <span>Acción-Aventura</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Jugadores:</span>
+                                    <span>1 jugador</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Clasificación:</span>
+                                    <span>R (18)</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Espacio:</span>
+                                    <span>18.2 GB</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Red Dead Redemption 2 es un videojuego de acción-aventura de mundo abierto.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$69.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Super Mario Odyssey -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="games">
+                    <div class="card h-100">
+                        <img src="../images/MORTAL-KOMBAT.JPG"
+                            class="card-img-top-carro" alt="Super Mario Odyssey">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Mortal Kombat XL</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Género:</span>
+                                    <span>Lucha</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Jugadores:</span>
+                                    <span>1-2 jugadores</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Clasificación:</span>
+                                    <span>R (18)</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Espacio:</span>
+                                    <span>5.7 GB</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Mortal Kombat XL es un excelente juego de lucha, alabado por su jugabilidad.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$59.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mario Kart 8 Deluxe -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="games">
+                    <div class="card h-100">
+                        <img src="../images/min.jpg"
+                            class="card-img-top-carro" alt="Mario Kart 8 Deluxe">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Mindsey 3</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Género:</span>
+                                    <span>Acción-Aventura</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Jugadores:</span>
+                                    <span>1</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Clasificación:</span>
+                                    <span>E (Everyone)</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Espacio:</span>
+                                    <span>6.8 GB</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">MindsEye es un videojuego de acción y aventura lineal en tercera persona.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$59.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pro Controller -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="accessories">
+                    <div class="card h-100">
+                        <img src="../images/robo.jpg"
+                            class="card-img-top-carro" alt="Nintendo Switch Pro Controller">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Robocop Rogue City</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Género:</span>
+                                    <span>Acción-Aventura</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Jugadores:</span>
+                                    <span>1</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Clasificación:</span>
+                                    <span>E (Everyone)</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Espacio:</span>
+                                    <span>15.8 GB</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Rogue City es un juego de disparos en primera persona. Es una historia original.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$69.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="accessories">
+                    <div class="card h-100">
+                        <img src="../images/mandoplay.jpg"
+                            class="card-img-top-carro" alt="Carcasa Protectora Switch">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Control Inalámbrico DualSense PSP 5</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Conexión:</span>
+                                    <span>Bluetooth/USB-C</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Batería:</span>
+                                    <span>40 horas</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Vibración:</span>  
+                                    <span>HD Rumble</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>NFC:</span>
+                                    <span>Compatible amiibo</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">oma el control con un diseno avanzado de dos tonos que combina un diseno intuitivo.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$69.990</span>
+                                </div>
+<button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="accessories">
+                    <div class="card h-100">
+                        <img src="../images/auto.jpg"
+                            class="card-img-top-carro" alt="Carcasa Protectora Switch">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">HORI Racing Wheel Apex PS5</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Tipo de Producto:</span>
+                                    <span>Controles Gamers</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Incluye:</span>
+                                    <span>Pedales</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Acceso:</span>
+                                    <span>Todos los puertos</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Colores:</span>
+                                    <span>Negro</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Ofrece lo mejor en calidad, opciones de personalización y simulación de carreras.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$195.990</span>
+                                </div>
+<button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Contacto</h4>
+          <ul class="list-unstyled">
+            <li><a href="#"></a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="tel:+56222222222"> +562 2222 2222</a></li>
+            <li><i class="fa-solid fa-envelope"></i><a href="https://mail.google.com/mail/?view=cm&to=marc.montes@duocuc.cl" target="_blank"> marc.montes@duocuc.cl</a></li>
+            <li><i class="fa-solid fa-envelope"></i><a href="https://mail.google.com/mail/?view=cm&to=marc.montes@duocuc.cl" target="_blank"> ma.hidalgoo@duocuc.cl</a></li>
+			<li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/search/?api=1&query=Antonio+Varas+%23666+Providencia" target="_blank"> Antonio Varas #666 Providencia</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Quienes Somos</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Visión</a></li>
+            <li><a href="#">Misión</a></li>
+            <li><a href="#">Valores</a></li>
+            <li><a href="#">Historia</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Nuestras Politicas</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Privacidad de Datos</a></li>
+            <li><a href="#">Derechos del Consumidor</a></li>
+            <li><a href="#">Politica de Devolución y reembolso</a></li>
+            <li><a href="#">Terminos y Condiciones</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    	<div class="col-md-3">
+    		<h4> Siguenos</h4>
+            <ul class="social-network social-circle">
+             <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="icoFacebook" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+             <li><a href="https://es.linkedin.com/learning/" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+			 <li><a href="https://x.com/?lang=es" target="_blank" class="icox" title="x"><i class="fa-brands fa-x-twitter"></i></a></li>
+			 <li><a href="https://www.instagram.com/" target="_blank" class="icoInsta" title="insta"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>				
+		</div>
+    </div>
+	<div class="row">
+		<div class="col-md-12 copy">
+			<p class="text-center">&copy; 2025 - Level Up Gamer.</p>
+		</div>
+	</div>
+
+
+  </div>
+  </div>
+</footer>
+   <!-- Bootstrap 5.3.8 JS con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
