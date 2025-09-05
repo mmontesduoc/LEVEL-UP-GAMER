@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,329 +13,471 @@
     <link href="../css/style.css" rel="stylesheet">
     <title>Nintendo - Level UP Gamer</title>
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-  
-    <a class="navbar-brand" href="index.html"> <img src="../images/logo2.png" alt="Level UP Gamer" class="logo-brand d-inline-block align-text-top"></a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="../layouts/menu-principal.html"> <img src="../images/logo2.png"
+                    alt="Level UP Gamer" class="logo-brand d-inline-block align-text-top"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../layouts/menu-principal.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../layouts/nintendo.html">Nintendo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Playstation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">XBOX</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../layouts/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="cart-login">
+                    <a href="#">
+                        <span class="inicio-sesion">Iniciar Sesion</span>
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </div>
+
+                <div class="cart-icon">
+                    <a href="../layouts/carro-compras.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+<br>
+
+    <!-- Header Nintendo -->
+    <div class="container-fluid text-center text-white py-5"
+        style="background: linear-gradient(135deg, #E60012, #0066CC); margin-bottom: 50px;">
+        <h1 class="display-3 fw-bold"><i class="fas fa-gamepad"></i> NINTENDO</h1>
+        <p class="lead">Descubre el mundo mágico de Nintendo con nuestras consolas y juegos exclusivos</p>
+    </div>
+
+    <!-- Filtros de Categoría -->
+    <div class="container mb-5">
+        <div class="text-center">
+            <button class="btn btn-outline-primary m-2 filter-btn" data-category="all">Todos los Productos</button>
+            <button class="btn btn-outline-primary m-2 filter-btn" data-category="consoles">Consolas</button>
+            <button class="btn btn-outline-primary m-2 filter-btn" data-category="games">Juegos</button>
+            <button class="btn btn-outline-primary m-2 filter-btn" data-category="accessories">Accesorios</button>
+        </div>
+    </div>
+
+    <!-- Sección de productos Nintendo -->
+    <section class="game-section-carro">
+        <div class="container">
+            <div class="row" id="products-container">
+
+                <!-- Nintendo Switch OLED -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="consoles">
+                    <div class="card h-100">
+                        <img src="../images/nintendoswoled.jpg"
+                            class="card-img-top-carro" alt="Nintendo Switch OLED">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Nintendo Switch OLED</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Pantalla:</span>
+                                    <span>OLED 7"</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Almacenamiento:</span>
+                                    <span>64GB</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Modos:</span>
+                                    <span>TV, Sobremesa, Portátil</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Batería:</span>
+                                    <span>4.5-9 horas</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">La consola híbrida con pantalla OLED vibrante. Juega en casa o donde
+                                quieras.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$349.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nintendo Switch Lite -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="consoles">
+                    <div class="card h-100">
+                        <img src="../images/switchlite.png"
+                            class="card-img-top-carro" alt="Nintendo Switch Lite">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Nintendo Switch Lite</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Pantalla:</span>
+                                    <span>LCD 5.5"</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Almacenamiento:</span>
+                                    <span>32GB</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Modo:</span>
+                                    <span>Solo Portátil</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Batería:</span>
+                                    <span>3-7 horas</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Versión portátil dedicada, más ligera y económica para gaming en
+                                movimiento.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$199.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The Legend of Zelda: Tears of the Kingdom -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="games">
+                    <div class="card h-100">
+                        <img src="../images/zelda.jpg" class="card-img-top-carro"
+                            alt="Zelda Tears of the Kingdom">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">The Legend of Zelda: Tears of the Kingdom</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Género:</span>
+                                    <span>Aventura/Acción</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Jugadores:</span>
+                                    <span>1 jugador</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Clasificación:</span>
+                                    <span>T (Teen)</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Espacio:</span>
+                                    <span>18.2 GB</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">La épica aventura continúa en Hyrule con nuevas habilidades y misterios
+                                por descubrir.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$69.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Super Mario Odyssey -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="games">
+                    <div class="card h-100">
+                        <img src="../images/super-mario.png"
+                            class="card-img-top-carro" alt="Super Mario Odyssey">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Super Mario Odyssey</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Género:</span>
+                                    <span>Plataformas</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Jugadores:</span>
+                                    <span>1-2 jugadores</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Clasificación:</span>
+                                    <span>E10+ (Everyone 10+)</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Espacio:</span>
+                                    <span>5.7 GB</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Únete a Mario en una aventura épica a través de reinos misteriosos con
+                                su fiel Cappy.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$59.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mario Kart 8 Deluxe -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="games">
+                    <div class="card h-100">
+                        <img src="../images/hq720.jpg"
+                            class="card-img-top-carro" alt="Mario Kart 8 Deluxe">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Mario Kart 8 Deluxe</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Género:</span>
+                                    <span>Carreras</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Jugadores:</span>
+                                    <span>1-4 local, 2-12 online</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Clasificación:</span>
+                                    <span>E (Everyone)</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Espacio:</span>
+                                    <span>6.8 GB</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Las carreras más emocionantes con todos tus personajes favoritos de
+                                Nintendo.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$59.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pro Controller -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="accessories">
+                    <div class="card h-100">
+                        <img src="../images/mando.jpg"
+                            class="card-img-top-carro" alt="Nintendo Switch Pro Controller">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Nintendo Switch Pro Controller</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Conexión:</span>
+                                    <span>Bluetooth/USB-C</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Batería:</span>
+                                    <span>40 horas</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Vibración:</span>
+                                    <span>HD Rumble</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>NFC:</span>
+                                    <span>Compatible amiibo</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Control profesional con ergonomía superior y tecnología avanzada de
+                                vibración.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$69.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carcasa Protectora -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="accessories">
+                    <div class="card h-100">
+                        <img src="../images/t.png"
+                            class="card-img-top-carro" alt="Carcasa Protectora Switch">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Carcasa Protectora Nintendo Switch</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Material:</span>
+                                    <span>TPU flexible</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Protección:</span>
+                                    <span>Anti-golpes</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Acceso:</span>
+                                    <span>Todos los puertos</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Colores:</span>
+                                    <span>5 opciones</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Protege tu Nintendo Switch con estilo. Incluye protectores de pantalla
+                                de vidrio templado.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$19.990</span>
+                                </div>
+<button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- Carcasa Protectora -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="accessories">
+                    <div class="card h-100">
+                        <img src="../images/v.png"
+                            class="card-img-top-carro" alt="Carcasa Protectora Switch">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Volante Joy-Con 2 Wheel Set de 2</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Tipo de Producto:</span>
+                                    <span>Controles Gamers</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Incluye:</span>
+                                    <span>2 Unidades</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Acceso:</span>
+                                    <span>Todos los puertos</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Colores:</span>
+                                    <span>5 opciones</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Protege tu Nintendo Switch con estilo. Incluye protectores de pantalla
+                                de vidrio templado.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$35.990</span>
+                                </div>
+<button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="nintendo.html">Nintendo</a>
-        </li>
-        <li class="nav-item">
-              <a class="nav-link" href="#">Playstation</a>
-            </li>
-        <li class="nav-item">
-              <a class="nav-link" href="#">XBOX</a>
-            </li>
-        <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-      </ul>
-      
-      <div class="cart-login">
-             <a href="#">
-             <span class="inicio-sesion">Iniciar Sesion</span>
-             <i class="fa-solid fa-user"></i>
-             </a>
-      </div>
-      
-      <div class="cart-icon">
-             <a href="#">
-             <i class="fas fa-shopping-cart"></i>
-             <span class="cart-count">0</span>
-             </a>
-      </div>
-
-    </div>
-  </div>
-</nav>
-
-<!-- Header Nintendo -->
-<div class="container-fluid text-center text-white py-5" style="background: linear-gradient(135deg, #E60012, #0066CC); margin-bottom: 50px;">
-    <h1 class="display-3 fw-bold"><i class="fas fa-gamepad"></i> NINTENDO</h1>
-    <p class="lead">Descubre el mundo mágico de Nintendo con nuestras consolas y juegos exclusivos</p>
-</div>
-
-<!-- Filtros de Categoría -->
-<div class="container mb-5">
-    <div class="text-center">
-        <button class="btn btn-outline-primary m-2 filter-btn active" data-category="all">Todos los Productos</button>
-        <button class="btn btn-outline-primary m-2 filter-btn" data-category="consoles">Consolas</button>
-        <button class="btn btn-outline-primary m-2 filter-btn" data-category="games">Juegos</button>
-        <button class="btn btn-outline-primary m-2 filter-btn" data-category="accessories">Accesorios</button>
-    </div>
-</div>
-
-<!-- Sección de productos Nintendo -->
-<section class="game-section">
-    <div class="container">
-        <div class="row" id="products-container">
+<footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Contacto</h4>
+          <ul class="list-unstyled">
+            <li><a href="#"></a></li>
+            <li><i class="fa-solid fa-phone"></i><a href="tel:+56222222222"> +562 2222 2222</a></li>
+            <li><i class="fa-solid fa-envelope"></i><a href="https://mail.google.com/mail/?view=cm&to=marc.montes@duocuc.cl" target="_blank"> marc.montes@duocuc.cl</a></li>
+            <li><i class="fa-solid fa-envelope"></i><a href="https://mail.google.com/mail/?view=cm&to=marc.montes@duocuc.cl" target="_blank"> ma.hidalgoo@duocuc.cl</a></li>
+			<li><i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/search/?api=1&query=Antonio+Varas+%23666+Providencia" target="_blank"> Antonio Varas #666 Providencia</a></li>
             
-            <!-- Nintendo Switch OLED -->
-            <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="consoles">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400" class="card-img-top" alt="Nintendo Switch OLED">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Nintendo Switch OLED</h5>
-                        <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
-                            <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Pantalla:</span>
-                                <span>OLED 7"</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Almacenamiento:</span>
-                                <span>64GB</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Modos:</span>
-                                <span>TV, Sobremesa, Portátil</span>
-                            </div>
-                            <div class="d-flex justify-content-between py-1">
-                                <span>Batería:</span>
-                                <span>4.5-9 horas</span>
-                            </div>
-                        </div>
-                        <p class="card-text">La consola híbrida con pantalla OLED vibrante. Juega en casa o donde quieras.</p>
-                        <div class="mt-auto">
-                            <div class="text-center mb-3">
-                                <span class="btn btn-warning fs-5 fw-bold">$349.99</span>
-                            </div>
-                            <button class="btn btn-primary w-100 add-to-cart">
-                                <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Quienes Somos</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Visión</a></li>
+            <li><a href="#">Misión</a></li>
+            <li><a href="#">Valores</a></li>
+            <li><a href="#">Historia</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4>Nuestras Politicas</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Privacidad de Datos</a></li>
+            <li><a href="#">Derechos del Consumidor</a></li>
+            <li><a href="#">Politica de Devolución y reembolso</a></li>
+            <li><a href="#">Terminos y Condiciones</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    	<div class="col-md-3">
+    		<h4> Siguenos</h4>
+            <ul class="social-network social-circle">
+             <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="icoFacebook" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+             <li><a href="https://es.linkedin.com/learning/" target="_blank" class="icoLinkedin" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+			 <li><a href="https://x.com/?lang=es" target="_blank" class="icox" title="x"><i class="fa-brands fa-x-twitter"></i></a></li>
+			 <li><a href="https://www.instagram.com/" target="_blank" class="icoInsta" title="insta"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>				
+		</div>
+    </div>
+	<div class="row">
+		<div class="col-md-12 copy">
+			<p class="text-center">&copy; 2025 - Level Up Gamer.</p>
+		</div>
+	</div>
 
-            <!-- Nintendo Switch Lite -->
-            <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="consoles">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400" class="card-img-top" alt="Nintendo Switch Lite">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Nintendo Switch Lite</h5>
-                        <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
-                            <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Pantalla:</span>
-                                <span>LCD 5.5"</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Almacenamiento:</span>
-                                <span>32GB</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Modo:</span>
-                                <span>Solo Portátil</span>
-                            </div>
-                            <div class="d-flex justify-content-between py-1">
-                                <span>Batería:</span>
-                                <span>3-7 horas</span>
-                            </div>
-                        </div>
-                        <p class="card-text">Versión portátil dedicada, más ligera y económica para gaming en movimiento.</p>
-                        <div class="mt-auto">
-                            <div class="text-center mb-3">
-                                <span class="btn btn-warning fs-5 fw-bold">$199.99</span>
-                            </div>
-                            <button class="btn btn-primary w-100 add-to-cart">
-                                <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <!-- The Legend of Zelda: Tears of the Kingdom -->
-            <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="games">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1533742851-5d7cd39dc94c?w=400" class="card-img-top" alt="Zelda Tears of the Kingdom">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">The Legend of Zelda: Tears of the Kingdom</h5>
-                        <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
-                            <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Género:</span>
-                                <span>Aventura/Acción</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Jugadores:</span>
-                                <span>1 jugador</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Clasificación:</span>
-                                <span>T (Teen)</span>
-                            </div>
-                            <div class="d-flex justify-content-between py-1">
-                                <span>Espacio:</span>
-                                <span>18.2 GB</span>
-                            </div>
-                        </div>
-                        <p class="card-text">La épica aventura continúa en Hyrule con nuevas habilidades y misterios por descubrir.</p>
-                        <div class="mt-auto">
-                            <div class="text-center mb-3">
-                                <span class="btn btn-warning fs-5 fw-bold">$69.99</span>
-                            </div>
-                            <button class="btn btn-primary w-100 add-to-cart">
-                                <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Super Mario Odyssey -->
-            <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="games">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=400" class="card-img-top" alt="Super Mario Odyssey">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Super Mario Odyssey</h5>
-                        <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
-                            <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Género:</span>
-                                <span>Plataformas</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Jugadores:</span>
-                                <span>1-2 jugadores</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Clasificación:</span>
-                                <span>E10+ (Everyone 10+)</span>
-                            </div>
-                            <div class="d-flex justify-content-between py-1">
-                                <span>Espacio:</span>
-                                <span>5.7 GB</span>
-                            </div>
-                        </div>
-                        <p class="card-text">Únete a Mario en una aventura épica a través de reinos misteriosos con su fiel Cappy.</p>
-                        <div class="mt-auto">
-                            <div class="text-center mb-3">
-                                <span class="btn btn-warning fs-5 fw-bold">$59.99</span>
-                            </div>
-                            <button class="btn btn-primary w-100 add-to-cart">
-                                <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mario Kart 8 Deluxe -->
-            <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="games">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1607853202273-797f1c22a38e?w=400" class="card-img-top" alt="Mario Kart 8 Deluxe">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Mario Kart 8 Deluxe</h5>
-                        <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
-                            <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Género:</span>
-                                <span>Carreras</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Jugadores:</span>
-                                <span>1-4 local, 2-12 online</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Clasificación:</span>
-                                <span>E (Everyone)</span>
-                            </div>
-                            <div class="d-flex justify-content-between py-1">
-                                <span>Espacio:</span>
-                                <span>6.8 GB</span>
-                            </div>
-                        </div>
-                        <p class="card-text">Las carreras más emocionantes con todos tus personajes favoritos de Nintendo.</p>
-                        <div class="mt-auto">
-                            <div class="text-center mb-3">
-                                <span class="btn btn-warning fs-5 fw-bold">$59.99</span>
-                            </div>
-                            <button class="btn btn-primary w-100 add-to-cart">
-                                <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pro Controller -->
-            <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="accessories">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1592840062661-d79bceb4de80?w=400" class="card-img-top" alt="Nintendo Switch Pro Controller">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Nintendo Switch Pro Controller</h5>
-                        <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
-                            <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Conexión:</span>
-                                <span>Bluetooth/USB-C</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Batería:</span>
-                                <span>40 horas</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Vibración:</span>
-                                <span>HD Rumble</span>
-                            </div>
-                            <div class="d-flex justify-content-between py-1">
-                                <span>NFC:</span>
-                                <span>Compatible amiibo</span>
-                            </div>
-                        </div>
-                        <p class="card-text">Control profesional con ergonomía superior y tecnología avanzada de vibración.</p>
-                        <div class="mt-auto">
-                            <div class="text-center mb-3">
-                                <span class="btn btn-warning fs-5 fw-bold">$69.99</span>
-                            </div>
-                            <button class="btn btn-primary w-100 add-to-cart">
-                                <i class="fas fa-cart-plus"></i> Agregar al Carrito
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Carcasa Protectora -->
-            <div class="col-lg-4 col-md-6 mb-4 product-item" data-category="accessories">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1565810338263-9e4b89b52a4a?w=400" class="card-img-top" alt="Carcasa Protectora Switch">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Carcasa Protectora Nintendo Switch</h5>
-                        <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
-                            <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Material:</span>
-                                <span>TPU flexible</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Protección:</span>
-                                <span>Anti-golpes</span>
-                            </div>
-                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <span>Acceso:</span>
-                                <span>Todos los puertos</span>
-                            </div>
-                            <div class="d-flex justify-content-between py-1">
-                                <span>Colores:</span>
-                                <span>5 opciones</span>
-                            </div>
-                        </div>
-                        <p class="card-text">Protege tu Nintendo Switch con estilo. Incluye protectores de pantalla de vidrio templado.</p>
-                        <div class="mt-auto">
-                            <div class="text-center mb-3">
-                                <span class="btn btn-warning fs-5 fw-bold">$19.99</span>
-                            </div>
+  </div>
+  </div>
+</footer>
+   <!-- Bootstrap 5.3.8 JS con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
