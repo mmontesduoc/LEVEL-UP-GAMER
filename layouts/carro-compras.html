@@ -10,156 +10,98 @@
 	<!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link href="../css/style.css" rel="stylesheet">
-    <title>Menu Principal Level UP Gamer</title>
+    <title>Carro de Compra</title>
     
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-  
-    <a class="navbar-brand" href="#"> <img src="../images/logo2.png" alt="Level UP Gamer" class="logo-brand d-inline-block align-text-top"></a>
-	
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Nintendo</a>
-        </li>
-		<li class="nav-item">
-          <a class="nav-link" href="#">Playstation</a>
-        </li>
-		<li class="nav-item">
-          <a class="nav-link" href="#">XBOX</a>
-        </li>
-		<li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-	  </ul>
-	  
-	  <div class="cart-login">
-             <a href="#">
-			 <span class="inicio-sesion">Iniciar Sesion</span>
-             <i class="fa-solid fa-user"></i>
-            
-             </a>
-      </div>
-	  
-	  <div class="cart-icon">
-             <a href="../layouts/carro-compras.html">
-             <i class="fas fa-shopping-cart"></i>
-             <span class="cart-count">0</span>
-             </a>
-      </div>
-
-        <!--<li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>-->
-    </div>
+     <a class="navbar-brand" href="#"> <img src="../images/logo2.png" alt="Level UP Gamer" class="logo-brand d-inline-block align-text-top"></a> 
   </div>
 </nav>
 
-
-
-    <!-- Carrusel -->
-    <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img src="../images/juegoscod.jpg" class="d-block w-100" alt="Videojuegos">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Los mejores videojuegos</h5>
-                    <p>Encuentra los títulos más populares del momento.</p>
+<div class="card-carro">
+    <div class="row">
+        <div class="col-md-8 cart">
+            <div class="title">
+                <div class="row">
+                    <div class="col"><h4><b>Carro de Compra</b></h4></div>
+                    <div class="col align-self-center text-right text-muted">Productos</div>
+                </div>
+            </div>    
+            <div class="row border-top border-bottom">
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="../images/codbops.jpg" alt="Call Of Duty - Black Ops"></div>
+                    <div class="col">
+                        <div class="row text-muted">Juego Play Station 4</div>
+                        <div class="row">Call Of Duty - Black Ops</div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="btn-quantity">-</a>
+                        <a href="#" class="border quantity">1</a>
+                        <a href="#" class="btn-quantity">+</a>
+                    </div>
+                    <div class="col">$ 45.000 <span class="close">&#10005;</span></div>
                 </div>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="../images/ultimate-gaming-setup.jpg" class="d-block w-100" alt="Gaming Setup">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Equipamiento gaming</h5>
-                    <p>Mejora tu setup con nuestros productos seleccionados.</p>
-                </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="../images/gamer.jpg" class="d-block w-100" alt="Consolas">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Últimas consolas</h5>
-                    <p>Descubre las novedades en el mundo de las consolas.</p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
-    </div>
-
-    <!-- Sección de productos destacados -->
-    <section class="game-section">
-        <div class="container">
-            <h2 class="text-center mb-5">Productos Destacados</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="../images/eldenring.jpg" class="card-img-top" alt="Juego 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Aventura Épica</h5>
-                            <p class="card-text">Sumérgete en un mundo de fantasía con este increíble juego de rol.</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                        </div>
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="../images/fifa18.jpg" alt="Fifa 18"></div>
+                    <div class="col">
+                        <div class="row text-muted">Juego XBOX</div>
+                        <div class="row">Fifa 18</div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="../images/lou.jpg" class="card-img-top" alt="Juego 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Acción y Aventura</h5>
-                            <p class="card-text">Experimenta la emoción de jugar con una perspectiva en tercera persona.</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                        </div>
+                    <div class="col">
+                        <a href="#" class="btn-quantity">-</a>
+                        <a href="#" class="border quantity">1</a>
+                        <a href="#" class="btn-quantity">+</a>
                     </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="../images/pro.jpg" class="card-img-top" alt="Juego 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Estrategia y Deporte</h5>
-                            <p class="card-text">Demuestra tus habilidades tácticas en juegos de deportes realistas .</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                        </div>
-                    </div>
+                    <div class="col">$48.500 <span class="close">&#10005;</span></div>
                 </div>
             </div>
+            <div class="row border-top border-bottom">
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="../images/wows.jpg" alt="Wacky World of Sports"></div>
+                    <div class="col">
+                        <div class="row text-muted">Juego Nintendo Wii</div>
+                        <div class="row">Wacky World of Sports</div>
+                    </div>
+                    <div class="col">
+                        <a href="#" class="btn-quantity">-</a>
+                        <a href="#" class="border quantity">1</a>
+                        <a href="#" class="btn-quantity">+</a>
+                    </div>
+                    <div class="col">$ 42.900 <span class="close">&#10005;</span></div>
+                </div>
+            </div>
+            <div class="back-to-shop"><a href="javascript:window.history.back();" ><i class="fa fa-backward" aria-hidden="true"></i> Volver a la Tienda</a></div>
         </div>
-    </section>
+
+        <div class="col-md-4 summary">
+            <h5><b>Resumen</b></h5>
+            <hr>
+            <div class="row">
+                <div class="col" style="padding-left:0;">Productos</div>
+                <div class="col text-right">$136.400</div>
+            </div>
+            <form>
+                <p>Compra</p>
+                <select>
+                    <option class="text-muted">Envio Standard- $2900</option>
+                </select>
+                <p>Ingresar Codigo</p>
+                <input id="code" placeholder="Ingresa tu Codigo">
+            </form>
+            <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 20px 0;">
+                <div class="col">Precio Total</div>
+                <div class="col text-right">$139.300</div>
+            </div>
+            <button class="btn">Continuar con tu Compra</button>
+        </div>
+    </div>
+</div>
+
 
     <footer class="mainfooter" role="contentinfo">
   <div class="footer-middle">
@@ -182,25 +124,25 @@
       <div class="col-md-3 col-sm-6">
         <!--Column1-->
         <div class="footer-pad">
-          <h4>Titulo 2</h4>
+          <h4>Quienes Somos</h4>
           <ul class="list-unstyled">
-            <li><a href="#">xxxxxxx</a></li>
-            <li><a href="#">xxxxxxx</a></li>
-            <li><a href="#">xxxxxxx</a></li>
-            <li><a href="#">xxxxxxx</a></li>
+            <li><a href="#">Visión</a></li>
+            <li><a href="#">Misión</a></li>
+            <li><a href="#">Valores</a></li>
+            <li><a href="#">Historia</a></li>
             
           </ul>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-3 col-sm-6"> 
         <!--Column1-->
         <div class="footer-pad">
-          <h4>Titulo 3</h4>
+          <h4>Nuestras Politicas</h4>
           <ul class="list-unstyled">
-            <li><a href="#">xxxxxxx</a></li>
-            <li><a href="#">xxxxxxx</a></li>
-            <li><a href="#">xxxxxxx</a></li>
-            <li><a href="#">xxxxxxx</a></li>
+            <li><a href="#">Privacidad de Datos</a></li>
+            <li><a href="#">Derechos del Consumidor</a></li>
+            <li><a href="#">Politica de Devolución y reembolso</a></li>
+            <li><a href="#">Terminos y Condiciones</a></li>
             
           </ul>
         </div>
