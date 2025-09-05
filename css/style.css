@@ -625,3 +625,102 @@ ul.social-network li {
 }
 
 /* fin estilos contacto*/
+/* estilos productos*/
+
+.game-section-carro {
+            padding: 10px 0;
+            color: white;
+			
+ }
+		
+
+.card-img-top-carro {
+		  width: 100%;
+		  height: 180px;          
+		  object-fit: cover;   
+		  padding: 10px;          
+		  
+}
+.product-item-carro .card {
+    max-width: 280px;
+    margin: 0 auto; /* centrarlas */
+}
+/* Títulos principales de la card */
+.card-title-carro {
+    font-size: 1rem; /* antes podía ser 1.25rem o más */
+    margin-bottom: 0.5rem;
+}
+
+/* Subtítulos de especificaciones */
+.card-body-carro h6 {
+    font-size: 0.85rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Texto de especificaciones */
+.card-body-carro .d-flex span {
+    font-size: 0.8rem;
+}
+
+/* Descripción de la consola */
+.card-text-carro {
+    font-size: 0.85rem;
+}
+
+.card-title-carro {
+    font-size: 14px;         
+    font-weight: bold;        
+    color: white;              
+    text-align: center;        
+    margin-bottom: 10px;       
+    line-height: 1.2;         
+}
+
+/* Botón "Agregar al carrito" */
+.add-to-cart-carro {
+    width: 70%;
+	height: auto;
+    font-size: 0.9rem;
+    padding: 5px 12px; /* más compacto */
+    border-radius: 30px;
+}
+
+.precio {
+    font-size: 18px;
+    font-weight: bold;    
+    margin: 9px auto;    
+    text-align: center;  /* centra el texto */
+    display: block;      /* asegura que el margen funcione */
+   
+}
+.text-primary {
+    color: #ffffff !important;  /* fuerza el color blanco */
+}
+
+.filter-btn {
+    border-radius: 30px;          /* bordes redondeados */
+    padding: 10px 25px;           /* tamaño del botón */
+    font-size: 0.9rem;            /* tamaño de texto */
+    font-weight: bold;             /* texto en negrita */
+    transition: all 0.3s ease;    /* transición suave */
+    border: 2px solid #007bff;    /* color del borde */
+    color: #007bff;               /* color del texto */
+    background-color: transparent; /* fondo inicial transparente */
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #007bff;    /* cambia fondo al pasar el mouse */
+    color: white;                 /* texto blanco al hacer hover */
+}
+
+.filter-btn.active {
+    background-color: #007bff;    /* fondo del botón activo */
+    color: white;                 /* texto del botón activo */
+    border-color: #007bff;        /* borde igual al fondo */
+}
+
+/* Para que todos los botones tengan un pequeño margen */
+.filter-btn + .filter-btn {
+    margin-left: 8px;
+}
