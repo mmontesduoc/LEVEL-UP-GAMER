@@ -724,3 +724,363 @@ ul.social-network li {
 .filter-btn + .filter-btn {
     margin-left: 8px;
 }
+
+/* fin estilos productos*/
+
+/* 
+   ESTILOS PARA PÁGINA DE INICIO DE SESIÓN Y REGISTRO
+   */
+
+/* Contenedor principal */
+.login-container {
+    padding: 60px 0;
+    background-color: #000000;
+    min-height: calc(100vh - 200px);
+}
+
+/* Título principal */
+.login-title {
+    color: #1E90FF;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #1E90FF;
+    position: relative;
+}
+
+.login-title::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #3A6073;
+}
+
+/* Contenido principal */
+.login-content {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+/* Secciones */
+.login-section,
+.register-section {
+    padding: 50px 40px;
+    height: 100%;
+}
+
+.login-section {
+    border-right: 1px solid #e9ecef;
+}
+
+/* Títulos de sección */
+.section-title {
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #1E90FF;
+}
+
+/* Descripción de sección */
+.section-description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Formulario */
+.login-form {
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-label {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.required {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.form-control:focus {
+    border-color: #1E90FF;
+    box-shadow: 0 0 0 0.2rem rgba(30, 144, 255, 0.25);
+    outline: none;
+}
+
+.form-control:hover {
+    border-color: #1E90FF;
+}
+
+/* Wrapper para input de contraseña */
+.password-input-wrapper {
+    position: relative;
+}
+
+/* Checkbox para mostrar contraseña */
+.form-check {
+    margin: 20px 0;
+}
+
+.form-check-input {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-check-input:checked {
+    background-color: #1E90FF;
+    border-color: #1E90FF;
+}
+
+.form-check-label {
+    color: #666;
+    font-size: 0.9rem;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+/* Acciones del formulario */
+.form-actions {
+    margin-top: 30px;
+}
+
+/* Botones */
+.btn-login,
+.btn-register {
+    background: linear-gradient(45deg, #1E90FF, #3A6073);
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(30, 144, 255, 0.3);
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    min-width: 200px;
+}
+
+.btn-login:hover,
+.btn-register:hover {
+    background: linear-gradient(45deg, #3A6073, #1E90FF);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(30, 144, 255, 0.4);
+    color: white;
+}
+
+.btn-login:active,
+.btn-register:active {
+    transform: translateY(0);
+}
+
+/* Enlace de contraseña olvidada */
+.forgot-password {
+    color: #1E90FF;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #3A6073;
+    text-decoration: underline;
+}
+
+/* Sección de registro */
+.register-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.register-actions {
+    margin-top: 30px;
+}
+
+/* Efectos de hover para las secciones */
+.login-section:hover,
+.register-section:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .login-section {
+        border-right: none;
+        border-bottom: 1px solid #e9ecef;
+    }
+    
+    .section-title {
+        text-align: center;
+    }
+    
+    .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .register-section {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        padding: 30px 0;
+    }
+    
+    .login-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    .login-section,
+    .register-section {
+        padding: 30px 20px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .form-control {
+        padding: 10px 12px;
+    }
+    
+    .btn-login,
+    .btn-register {
+        padding: 12px 30px;
+        font-size: 0.9rem;
+        min-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-title {
+        font-size: 1.7rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .section-description {
+        font-size: 0.9rem;
+    }
+    
+    .btn-login,
+    .btn-register {
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-content {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Estados de error para validación */
+.form-control.error {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+}
+
+.form-control.success {
+    border-color: #28a745;
+    background-color: #f8fff9;
+}
+
+/* Mensajes de error */
+.error-message {
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Loading state para botones */
+.btn-login.loading,
+.btn-register.loading {
+    position: relative;
+    color: transparent;
+}
+
+.btn-login.loading::after,
+.btn-register.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid transparent;
+    border-top: 2px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
