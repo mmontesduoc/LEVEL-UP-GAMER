@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5.3.8 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+    <title>Nintendo - Level UP Gamer</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="../layouts/menu-principal.html"> <img src="../images/logo2.png"
+                    alt="Level UP Gamer" class="logo-brand d-inline-block align-text-top"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../layouts/menu-principal.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../layouts/nintendo.html">Nintendo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../layouts/play-station.html">Playstation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../layouts/Tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../layouts/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+
+                <div class="cart-login">
+                    <a class="nav-link" href="../layouts/inicio-sesion.html">
+                        <span class="inicio-sesion">Iniciar Sesion</span>
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </div>
+
+                <div class="cart-icon">
+                    <a href="../layouts/carro-compras.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <!-- Header Nintendo -->
+    <div class="container-fluid text-center text-white py-5"
+        style="background: linear-gradient(135deg, #E60012, #0066CC); margin-bottom: 50px;">
+        <h1 class="display-3 fw-bold"><i class="fas fa-gamepad"></i> TIENDA DE PRODUCTOS</h1>
+        <p class="lead">Descubre nuestro catalogo de diversos productos y accessorios</p>
+    </div>
+
+    <!-- Filtros de Categoría 
+    <div class="container mb-5">
+        <div class="text-center">
+            <button class="btn btn-outline-primary m-2 filter-btn" data-category="all">Todos los Productos</button>
+            <button class="btn btn-outline-primary m-2 filter-btn" data-category="consoles">Consolas</button>
+            <button class="btn btn-outline-primary m-2 filter-btn" data-category="games">Juegos</button>
+            <button class="btn btn-outline-primary m-2 filter-btn" data-category="accessories">Accesorios</button>
+        </div>
+    </div>-->
+
+    <!-- Sección de productos de tienda -->
+    <section class="game-section-carro">
+        <div class="container">
+            <div class="row" id="products-container">
+
+                <!-- Mousepad -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="consoles">
+                    <div class="card h-100">
+                        <img src="../images/mousepad.PNG" class="card-img-top-carro" alt="Nintendo Switch OLED">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Mousepad</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Tamaño:</span>
+                                    <span>Medio"</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Largo:</span>
+                                    <span>355 mm</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Ancho:</span>
+                                    <span>255 mm</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Grosor</span>
+                                    <span>3 mm</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Ofrece un área de juego amplia con iluminación RGB
+                                personalizable, asegurando una superficie suave y uniforme para el
+                                movimiento del mouse.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$29.990 </span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--poleras -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="consoles">
+                    <div class="card h-100">
+                        <img src="../images/polera1.PNG" class="card-img-top-carro" alt="Nintendo Switch Lite">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Polera gamer</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Tallas:</span>
+                                    <span>S M L XL"</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Maaterial:</span>
+                                    <span>Algodon</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Colores:</span>
+                                    <span>Negro/blanco</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Una camiseta cómoda y estilizada, con la
+                                posibilidad de personalizarla con tu gamer tag o diseño favorito.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$14.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--poleras -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="consoles">
+                    <div class="card h-100">
+                        <img src="../images/polera2.PNG" class="card-img-top-carro" alt="Nintendo Switch Lite">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Polera gamer</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Tallas:</span>
+                                    <span>S M L XL"</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Material:</span>
+                                    <span>Algodon</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Colores:</span>
+                                    <span>Negro/blanco</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Una camiseta cómoda y estilizada, con la
+                                posibilidad de personalizarla con tu gamer tag o diseño favorito.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$14.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Pantuflas -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="games">
+                    <div class="card h-100">
+                        <img src="../images/pantuflas.PNG" class="card-img-top-carro" alt="Super Mario Odyssey">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Pantuflas starwars BobbaFett</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Tallas:</span>
+                                    <span>S M L</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Material:</span>
+                                    <span>Poliester</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Las pantuflas Star Wars Boba Fett son un par de zapatillas
+                                blandas hechas para largas noches en Hoth.
+                                De calidad superior y cómodas, las pantuflas Star Wars Boba Fett es lo que necesitan!
+                            </p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$11.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Funko -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="games">
+                    <div class="card h-100">
+                        <img src="../images/funkopin.PNG" class="card-img-top-carro" alt="Mario Kart 8 Deluxe">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Funko pop pin Batman</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Marca:</span>
+                                    <span>funko</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Tamaño:</span>
+                                    <span>10 cm</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Clasificación:</span>
+                                    <span>niños y jovenes</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Los Pop! Pin, producidos entre Funko y su compañía hermana
+                                Loungefly,
+                                unen el concepto de figura Pop! y los pins de siempre</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$59.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- catan -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="accessories">
+                    <div class="card h-100">
+                        <img src="../images/catan.PNG" class="card-img-top-carro" alt="Nintendo Switch Pro Controller">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Catan</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Autor:</span>
+                                    <span>Klaus Teuber</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Grupo de edad</span>
+                                    <span>+12 años</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Jugadores</span>
+                                    <span>2-4</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Piezas pequeñas:</span>
+                                    <span>si</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Un clásico juego de estrategia donde los jugadores compiten por
+                                colonizar y
+                                expandirse en la isla de Catan. Ideal para 3-4 jugadores y perfecto para noches de juego
+                                en
+                                familia o con amigos</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$29.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- king -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="accessories">
+                    <div class="card h-100">
+                        <img src="../images/kiogofnewyork.PNG" class="card-img-top-carro"
+                            alt="Nintendo Switch Pro Controller">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">King of Newyork</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Autor:</span>
+                                    <span>Nicholas St. John</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Grupo de edad</span>
+                                    <span>+12 años</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Jugadores</span>
+                                    <span>2-6</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Piezas pequeñas:</span>
+                                    <span>si</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">King of New York es un juego diseñado
+                                para 2 a 6 jugadores que volverán a tomar el papel gigantescas criaturas que han elegido
+                                una ciudad para ver cuál de ellas es la mejor, sin importar
+                                la destrucción colateral que esta “discusión” pueda provocar.</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$35.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--space -->
+                <div class="col-lg-3 col-md-6 mb-4 product-item-carro" data-category="accessories">
+                    <div class="card h-100">
+                        <img src="../images/space.PNG" class="card-img-top-carro"
+                            alt="Nintendo Switch Pro Controller">
+                        <div class="card-body-carro d-flex flex-column">
+                            <h5 class="card-title-carro">Space Base</h5>
+                            <div class="bg-primary bg-opacity-25 p-3 rounded mb-3">
+                                <h6 class="text-primary mb-2"><i class="fas fa-list"></i> Especificaciones:</h6>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Autor:</span>
+                                    <span>ohn D Clair</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Grupo de edad</span>
+                                    <span>+12 años</span>
+                                </div>
+                                <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                    <span>Jugadores</span>
+                                    <span>2-4</span>
+                                </div>
+                                <div class="d-flex justify-content-between py-1">
+                                    <span>Piezas pequeñas:</span>
+                                    <span>no</span>
+                                </div>
+                            </div>
+                            <p class="card-text-carro">Como capitán de una base espacial, tu trabajo consiste en
+                                 reclutar nuevas naves al servicio de tu flota para que patrullen los 12 sectores
+                                  bajo tu supervisión. Usa cargueros, naves mineras y portanaves de despliegue para obtener
+                                   ganancias y expandir tu influencia. ¡Solo uno de todos los capitanes
+                                 de base espacial será ascendido a almirante de la flota de las N.U.T.!</p>
+                            <div class="mt-auto">
+                                <div class="text-center-carro mb-3">
+                                    <span class="precio">$43.990</span>
+                                </div>
+                                <button class="btn btn-primary w-100 add-to-cart-carro">
+                                    <i class="fas fa-cart-plus"></i> Agregar al Carrito
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Contacto</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#"></a></li>
+                                <li><i class="fa-solid fa-phone"></i><a href="tel:+56222222222"> +562 2222 2222</a></li>
+                                <li><i class="fa-solid fa-envelope"></i><a
+                                        href="https://mail.google.com/mail/?view=cm&to=marc.montes@duocuc.cl"
+                                        target="_blank"> marc.montes@duocuc.cl</a></li>
+                                <li><i class="fa-solid fa-envelope"></i><a
+                                        href="https://mail.google.com/mail/?view=cm&to=marc.montes@duocuc.cl"
+                                        target="_blank"> ma.hidalgoo@duocuc.cl</a></li>
+                                <li><i class="fa-solid fa-location-dot"></i><a
+                                        href="https://www.google.com/maps/search/?api=1&query=Antonio+Varas+%23666+Providencia"
+                                        target="_blank"> Antonio Varas #666 Providencia</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Quienes Somos</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Visión</a></li>
+                                <li><a href="#">Misión</a></li>
+                                <li><a href="#">Valores</a></li>
+                                <li><a href="#">Historia</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <!--Column1-->
+                        <div class="footer-pad">
+                            <h4>Nuestras Politicas</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Privacidad de Datos</a></li>
+                                <li><a href="#">Derechos del Consumidor</a></li>
+                                <li><a href="#">Politica de Devolución y reembolso</a></li>
+                                <li><a href="#">Terminos y Condiciones</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h4> Siguenos</h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank" class="icoFacebook"
+                                    title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://es.linkedin.com/learning/" target="_blank" class="icoLinkedin"
+                                    title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://x.com/?lang=es" target="_blank" class="icox" title="x"><i
+                                        class="fa-brands fa-x-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank" class="icoInsta" title="insta"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; 2025 - Level Up Gamer.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap 5.3.8 JS con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
