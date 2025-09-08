@@ -1,7 +1,7 @@
-// JavaScript simplificado para el formulario de registro
+// JavaScript  registro de usuarios
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Elementos del formulario
+    // Elementos del DOM
     const form = document.getElementById('registerForm');
     const firstName = document.getElementById('firstName');
     const lastName = document.getElementById('lastName');

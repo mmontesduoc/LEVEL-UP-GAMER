@@ -1,4 +1,4 @@
-// JavaScript simplificado para página de inicio de sesión
+// JavaScript  inicio de sesión
 document.addEventListener('DOMContentLoaded', function() {
     
     // Elementos del DOM
