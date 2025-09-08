@@ -1085,6 +1085,104 @@ ul.social-network li {
     100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+
+
+  
+/* animacion formulario contactos, banner y carrusel*/
+
+.btn-principal {
+   
+	border-radius: 30px;
+	width: 200px;
+	display: block;      
+    margin: 0 auto;
+	padding: 10px 25px;          
+    font-size: 1.0rem;            
+    font-weight: bold;            
+    transition: all 0.3s ease;    
+    border: 2px solid #007bff;   
+    color: white;              
+    background-color: transparent; 
+    cursor: pointer;
+	text-align: center;
+	
+}
+
+.btn-principal:hover {
+    background-color: #007bff;    
+    color: white;          
+}	
+
+.btn-principal.active {
+    background-color: #007bff;    
+    color: white;                 
+    border-color: #007bff;        
+}
+
+
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container-contacto {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* animacion banner*/
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.container-fluid-banner {
+  animation: slideUp 1.0s ease-out forwards;
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* animacion carrusel*/
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.carousel {
+  animation: slideUp 1.0s ease-out forwards;
+
+}
+
 /* ==============================================
    ESTILOS ADICIONALES PARA PÁGINA DE REGISTRO
    ============================================== */
@@ -1236,4 +1334,3 @@ ul.social-network li {
     .requirements-list li {
         font-size: 0.8rem;
     }
-}
