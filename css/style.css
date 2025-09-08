@@ -1084,3 +1084,156 @@ ul.social-network li {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
+
+/* ==============================================
+   ESTILOS ADICIONALES PARA PÁGINA DE REGISTRO
+   ============================================== */
+
+/* Formulario de registro */
+.register-form-section {
+    padding: 40px;
+    background-color: white;
+}
+
+.register-form {
+    max-width: 100%;
+}
+
+/* Subtítulos de sección */
+.section-subtitle {
+    color: #1E90FF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 30px 0 20px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e9ecef;
+    position: relative;
+}
+
+.section-subtitle::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #1E90FF;
+}
+
+/* Requisitos de contraseña */
+.password-requirements {
+    margin-top: 8px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #1E90FF;
+}
+
+.password-requirements small {
+    color: #666;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.requirements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.requirements-list li {
+    font-size: 0.85rem;
+    color: #dc3545;
+    margin-bottom: 3px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.requirements-list li::before {
+    content: '✗';
+    position: absolute;
+    left: 0;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.requirements-list li.valid {
+    color: #28a745;
+}
+
+.requirements-list li.valid::before {
+    content: '✓';
+    color: #28a745;
+}
+
+/* Sección de términos */
+.terms-section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.terms-link {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.terms-link:hover {
+    color: #3A6073;
+    text-decoration: underline;
+}
+
+/* Enlace de login */
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.login-link a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #3A6073;
+    text-decoration: underline;
+}
+
+/* Ajustes responsive para registro */
+@media (max-width: 768px) {
+    .register-form-section {
+        padding: 25px 20px;
+    }
+    
+    .section-subtitle {
+        font-size: 1.2rem;
+        margin: 25px 0 15px 0;
+    }
+    
+    .password-requirements {
+        padding: 8px;
+    }
+    
+    .terms-section {
+        padding: 15px;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .requirements-list li {
+        font-size: 0.8rem;
+    }
+}
